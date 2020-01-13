@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>SPA</title>
+    <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+
+	<script src="angular-1.6.6/angular.min.js"></script>
+    <script src="angular-1.6.6/angular-animate.min.js"></script>
+    <script src="angular-1.6.6/angular-touch.min.js"></script>
+    <script src="angular-1.6.6/angular-route.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+
+    <script src="js/script.js"></script>
+
+</head>
+<body ng-app="spaApp">
+     <section>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m9 l10">
+                    <a href="#!">Home</a> |
+                    <a href="#!about">About</a> |
+                    <a href="#!contact">Contact</a> |
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+    <div ng-controller="mainController">
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+    </div>
+</body>
+</html>
